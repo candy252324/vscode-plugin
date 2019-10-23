@@ -1,0 +1,87 @@
+{
+	"name": "find-reference",
+	"displayName": "find-reference",
+	"description": "Just to learn how to write a vscode plugin.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.39.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.treeItemClick",
+		"onLanguage:json",
+		"onView:panel1"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "panel1.refreshEntry",
+				"title": "Refresh",
+				"icon": {
+					"light": "images/light/refresh.svg",
+					"dark": "images/dark/refresh.svg"
+				}
+			}
+		],
+		"keybindings": [
+		
+		],
+		"menus": {
+			"view/title":[
+				{
+					"command": "panel1.refreshEntry",
+					"when": "view == panel1",
+					"group": "navigation"
+				}
+			],
+			"editor/context": [
+			
+			],
+			"editor/title": [
+			
+			]
+		},
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "MyViewTree",
+					"title": "FindReference",
+					"icon": "images/logo.svg"
+				}
+			]
+		},
+		"views": {
+			"MyViewTree": [
+				{
+					"id": "panel1",
+					"name": "panel1"
+				},
+				{
+					"id": "panel2",
+					"name": "panel2"
+				},
+				{
+					"id": "panel3",
+					"name": "panel3"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.37.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.2"
+	}
+}
