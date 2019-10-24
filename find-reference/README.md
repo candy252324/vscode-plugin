@@ -20,7 +20,7 @@ code .
 
 在图中示例项目中，共有四个文件引用了示例文件（EventDetailDialog.vue）,这四个文件都被查找出来了。
 
-![图片加载失败](https://raw.githubusercontent.com/candy252324/vscode-plugin/master/screenShots/findReference/pic1.png)
+![图片加载失败，图片地址：https://raw.githubusercontent.com/candy252324/vscode-plugin/master/screenShots/findReference/pic1.png](https://raw.githubusercontent.com/candy252324/vscode-plugin/master/screenShots/findReference/pic1.png)
 
 
 
