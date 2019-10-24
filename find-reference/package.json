@@ -26,23 +26,17 @@
 				}
 			}
 		],
-		"keybindings": [
-		
-		],
+		"keybindings": [],
 		"menus": {
-			"view/title":[
+			"view/title": [
 				{
 					"command": "panel1.refreshEntry",
 					"when": "view == panel1",
 					"group": "navigation"
 				}
 			],
-			"editor/context": [
-			
-			],
-			"editor/title": [
-			
-			]
+			"editor/context": [],
+			"editor/title": []
 		},
 		"viewsContainers": {
 			"activitybar": [
